@@ -1,0 +1,4 @@
+node_modules
+.env
+plugins/*
+!plugins/plugins.md
