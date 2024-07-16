@@ -27,3 +27,27 @@ In order to deal with your data, create a Javascript file in the `plugins` direc
 As an example, copy the file named `visual.js` from the examples folder into the `plugins` directory. This script will output a small visual of the tracks outside Sheaf Bank Business Park to the Console.
 
 Put all of your scripts in there you wish to run.
+
+## Example callback
+
+```js
+function do_callback(data) {
+  console.log(data);
+  // data looks like
+  // {
+  // '68': '',    
+  // '69': '',    
+  // '70': '',    
+  // '76': '',    
+  // '77': '1R78',
+  // '78': '',    
+  // '79': '',    
+  // '80': '',    
+  // '81': ''     
+  // }
+}
+
+module.exports = function (signal_blocks) {
+  do_callback(signal_blocks);
+};
+```
