@@ -47,7 +47,5 @@ function do_callback(data) {
   // }
 }
 
-module.exports = function (signal_blocks) {
-  do_callback(signal_blocks);
-};
+module.exports = do_callback
 ```
